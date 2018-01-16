@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+
+  <title>COIN PASTE</title>
+
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"  crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body id="body_content" onload='getData();'>
+
+    <div align="center">
+    <h1 align="center">COIN PASTE </h1>
+  </div>
+
+  <br><div align="right">
+  <button id="delete" class="btn btn-lg btn-primary" onClick='delete_coin();' type="button">DEL</button> 
+  <button id="add" class="btn btn-lg btn-primary" onClick='refresh();' type="button">↺</button>        
+</div>
+
+  <br><div align="center">    
+      <h2  align="center">CURRENT COINS</h2>                           
+    <table  class="table">
+        <thead>
+          <tr id="titletab" >
+              <th id="titletab">SELECT    
+              </th>
+            <th id="titletab">COIN</th>
+            <th id="titletab">RELEASE</th>
+            <th id="titletab">URL</th>
+          </tr>
+        </thead>
+        <thead id="content">
+          </thead>
+        </table>
+      </div><br>
+
+
+      <h2  align="center">ADD COIN</h2>
+      <form id="formset" action="http://127.0.0.1:5001/updateTrades" method="post">
+        
+        <div class="form-group">
+          <div class="col-xs-2">
+          <label >COIN</label>
+          <input id="formfield" type="text" class="form-control" name="coin" placeholder="NEW COIN HERE"/>
+        </div></div>
+        <div class="form-group">
+            <div class="col-xs-2">
+          <label >RELEASE DATE</label>
+          <input id="formfield" type="text" class="form-control" name="date" placeholder="COINS LAUNCH DATE"/>
+        </div></div>
+        <div class="form-group">
+            <div class="col-xs-2">
+          <label >WEB ADDRESS</label>
+          <input id="formfield" type="text" class="form-control" name="url" placeholder="URL"/>
+        </div></div>
+        <div class="form-group">
+            <div class="col-xs-2">
+          <label >PASSWORD</label>
+          <input id="formfield" type="text" class="form-control" name="password" placeholder="HASH KEY"/>
+        </div></div>
+        <div align="center">
+      <button id="add" class="btn btn-lg btn-primary"  type="submit">ADD COIN</button>        
+    </div><br><br>
+      </form>
+
+
+        
+      
+
+    <footer>
+      <p align="center">Made by: <a href="mailto:james.m.weeks@gmail.com">
+     www.intotodesign.tk</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
+
+    <script src="javascript.js"></script>
+
+  </body>
+
+</html>

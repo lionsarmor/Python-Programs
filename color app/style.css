@@ -1,0 +1,96 @@
+body{
+    background-color: #020c11;
+   
+    font-family: "Impact";
+    font-size: 48px;
+    color: #698cb1;
+
+    border: 4px solid #ffa500;
+    padding: 10px;
+    margin: 80px 80px;
+    border-radius: 25px;
+}
+
+
+p{
+     
+    font-family: "Impact";
+    font-size: 15px;
+    color: #ffa500;
+
+}
+
+.content{
+    
+   font-family: "Impact";
+   font-size: 25px;
+   color: #3639ce;
+
+}
+
+#titletab{
+    
+   font-family: "Impact";
+   font-size: 25px;
+   color: #805a5a;
+   
+}
+
+table,th,tr{
+    
+   font-family: "Impact";
+   font-size: 23px;
+   color: #216483;
+   border:3px solid#ffa500;
+   
+}
+
+tr:hover {background-color: #171625;}
+
+
+
+.form-group{
+   font-family: "Impact";
+   font-size: 23px;
+   color: #89b7fc;
+   border:3px solid#ffa500;
+   background-color: #020c11;
+   padding-bottom: 20px;
+}
+
+input[type=text] focus{
+    color: #30303a;
+    background-color: #020c11;
+}
+
+#formfield {
+    background-color: #020c11;
+
+    
+}
+
+
+#add {
+    background-color: #020c11;
+    color: #ffa500;
+    border: 2px solid rgb(52, 125, 235); 
+}
+
+#delete {
+    background-color: #020c11;
+    color: #ff1e00;
+    border: 2px solid rgb(52, 125, 235); 
+    
+}
+
+#error {
+    color: #ff3300;
+    border: 2px solid rgb(235, 73, 52); 
+    
+}
+
+#success {
+    color: #4165a7;
+    border: 2px solid #4165a7; 
+    
+}
